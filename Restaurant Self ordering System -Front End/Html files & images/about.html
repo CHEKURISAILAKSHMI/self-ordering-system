@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.containers::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.buttons {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttons:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<!DOCTYPE HTML>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale = 1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="F:\Restaurant Self ordering System -Front End\styles.css">
+<title>SHOPPING CART</title>
+</head>
+<body>
+<header>
+<div class="overlay"></div>
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i>
+</label>
+<h1>GO FOODIE</h1><ul>
+<li><a href="carthome.html" >HOME</a></li>
+<li><a href="about.html" > ABOUT</a></li>
+<li><a href="#" > CHEF</a></li>
+<li><a href="Map.html">LOCATION</a></li>
+<li><form class="form-inline" action="#"> 
+    <input type="text"  style="height:30px"; placeholder="Search.." name="search">
+      <button type="submit"  style="height:30px;width:20px" ><i class="fa fa-search"></i></button>
+    </li>
+  </form>
+</ul>
+</nav>
+</header>
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p> We are a team created as part of Startup in India. Our team was originally formed as the daily visitors of the famous restaurant and thought of making a startup in this city.  </p>
+<p> We have look into all the customer needs and made a plan of Self-Ordering System in our Restaurant,Where you are now..We have been the best in the city for 5 years..
+
+</p></div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="icon1.jpg" alt="Jane" style="width:100%;height:250px">
+      <div class="containers">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>The inspiration to young minds in India.</p>
+        <p>jane@gmail.com</p>
+        <p><button class="buttons">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="icon2.jpg" alt="Mike" style="width:100%;height:250px">
+      <div class="containers">
+        <h2>Mike Ross</h2>
+        <p class="title">Restaurant Manager</p>
+        <p>Made the restaurant to next level by his sevices.</p>
+        <p>mike@gmail.com</p>
+        <p><button class="buttons">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="icon3.jpg" alt="John" style="width:100%;height:250px">
+      <div class="containers">
+        <h2>John Doe</h2>
+        <p class="title">Chief Chef</p>
+        <p>Awarded as the best Chef in India.</p>
+        <p>john@gmail.com</p>
+        <p><button class="buttons">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

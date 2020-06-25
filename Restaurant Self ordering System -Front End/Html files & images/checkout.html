@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout Form</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="F:\Restaurant Self ordering System -Front End\style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale = 1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="F:\Restaurant Self ordering System -Front End\styles.css">
+
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<header>
+<div class="overlay"></div>
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i>
+</label>
+<h1>GO FOODIE</h1><ul>
+<li><a href="carthome.html" >HOME</a></li>
+<li><a href="about.html" > ABOUT</a></li>
+<li><a href="#" > CHEF</a></li>
+<li class="cart">
+<a href="cartindex.html">
+<ion-icon name="basket"></ion-icon>CART<span>0</span>
+</a>
+</li>
+<li><a href="Map.html">LOCATION</a></li>
+<li><form class="form-inline" action="#"> 
+    <input type="text"  style="height:30px"; placeholder="Search.." name="search">
+      <button type="submit"  style="height:30px;width:20px" ><i class="fa fa-search"></i></button>
+    </li>
+  </form>
+</ul>
+</nav>
+</header>
+
+		<div class="col-md-4 container bg-default">
+			
+			<h4 class="my-4" align="center" font="blue">
+					Billing Address
+			</h4>
+			
+			<form action="last.html">
+				<div class="form-row">
+					<div class="col-md-6 form-group">
+						<label for="firstname">Customer Name</label>
+						<input type="text" class="form-control" id="firstname" placeholder="Customer Name">
+						<div class="invalid-feedback">
+							Valid first name is required.
+						</div>
+					</div>
+
+					
+
+				<div class="row">
+					<div class="col-md-4 form-group">
+						<label for="country">Country</label>
+						<select type="text" class="form-control" id="country">
+							<option value>Choose...</option>
+							<option>INDIA</option>
+							<option>NEPAL</option>
+							<option>MALAYSIA</option>
+							<option>SINGAPORE</option>
+						</select>
+						<div class="invalid-feedback">
+							Please select a valid country.
+						</div>
+					</div>
+
+					<div class="col-md-4 form-group">
+						<label for="city">City</label>
+						<select type="text" class="form-control" id="city">
+							<option value>Choose...</option>
+							<option>HYDERABAD</option>
+							<option>BENGALURU</option>
+							<option>MUMBAI</option>
+							<option>DELHI</option>
+							<option>CHENNAI</option>
+						</select>
+						<div class="invalid-feedback">
+							Please provide a valid city.
+						</div>
+					</div>
+						
+					<div class="col-md-4 form-group">
+						<label for="postcode">Postcode</label>
+						<select type="text" class="form-control" id="postcode">
+							<option value>Choose...</option>
+							<option>533407</option>
+							<option>533401</option>
+							<option>533496</option>
+							<option>533512</option>
+						</select>
+						<div class="invalid-feedback">
+							Postcode required.
+						</div>
+					</div>
+				</div>
+
+				
+				<h4 class="mb-4">Payment</h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
+				<div class="form-check">
+					<input type="radio" class="form-check-input" id="credit" name="payment-method" checked required>
+					<label for="credit" class="form-check-label">Credit Card</label>&nbsp;&nbsp;
+				</div>
+
+				<div class="form-check">
+					<input type="radio" class="form-check-input" id="debit" name="payment-method" required>
+					<label for="debit" class="form-check-label">Debit Card</label>&nbsp;&nbsp;
+				</div>
+
+				<div class="form-check">
+					<input type="radio" class="form-check-input" id="paypal" name="payment-method"  required>
+					<label for="paypal" class="form-check-label">PayPal</label>
+				</div>
+			
+				<div class="row mt-4">
+					<div class="col-md-6 form-group">
+							<label for="card-name">Name on card</label>
+							<input type="text" class="form-control" id="card-name" placeholder required>
+							<div class="invalid-feedback">
+								Name on card is required
+							</div>
+						</div>
+
+						<div class="col-md-6 form-group">
+							<label for="card-no">Card Number</label>
+							<input type="text" class="form-control" id="card-no" placeholder required>
+							<div class="invalid-feedback">
+								Credit card number is required
+							</div>
+						</div>
+				</div>
+
+				<div class="form-row">
+					<div class="col-md-5 form-group">
+							<label for="expiration">Expire Date</label>
+							<input type="text" class="form-control" id="card-name" placeholder required>
+							<div class="invalid-feedback">
+								Expiration date required
+							</div>
+						</div>
+					
+
+					<div class="col-md-5 form-group">
+							<label for="ccv-no">Security Number</label>
+							<input type="text" class="form-control" id="sec-no" placeholder required>
+							<div class="invalid-feedback">
+								Security code required
+							</div>
+					</div>
+				</div>
+
+					<hr class="mb-4">
+				
+					<button class="btn btn-primary bt-lg btn-block" type="submit" >Continue to Checkout</button>
+			</form>
+		</div>
+		
+		
+</body>
+
+<style>
+body {
+  background-image: url('veg4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container {
+  border-radius: 5px;
+  background-color:transparent;
+   box-shadow: 5px 5px 5px 5px;;
+  padding: 20px;
+  margin-top:25px;
+  border:2px solid lightgrey;
+}
+
+</style>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<body background="bg2.jpg"  style="background-size:cover">
+<div class="container1">
+<h2> Your Order was placed on successfull payment<br><br><br>ORDER ID:2345</h2>
+</div>
+<h3 align="center">SELECT "YES" if you received your order and "SUBMIT" </h3>
+<div class="yes">
+<form>
+<label for="num" size="20px"><h2><b>ORDER RECEIVED :</b></h2></label>
+  <input type="radio" id="yes" name="visit" value="YES">
+    <label for="male">YES</label><br><br><br> 
+    <input type="radio" id="no" name="visit" value="NO">
+	 <label for="male">NO</label><br><br><br> 
+	 <button onclick="thanks()" ;align="center" style="background:blue;color:white;align:center;height:40px;width:80px;"/>SUBMIT</button> 
+</form>
+</div>
+<style>
+.container1{
+display: flex;
+	justify-content: center;
+	flex-wrap : wrap;
+	margin-top: 50px;
+	padding-bottom: 50px;
+	border:3px solid black;
+	text-align:center;
+	background-color:rgba(10,10,10,0.3);;
+}
+.yes{
+display: flex;
+	justify-content: center;
+	flex-wrap : wrap;
+	margin-top: 50px;
+	padding-bottom: 50px;
+	text-align:center;
+	border:3px solid black;
+	
+
+}
+</style>
+<script>
+function thanks(){
+alert("Thank you,Have a nice day@GO FOODIE");
+}
+</script>
+</body>
+</html>
